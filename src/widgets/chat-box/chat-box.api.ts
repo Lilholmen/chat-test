@@ -29,7 +29,7 @@ export const useSubscrideToChat = () => {
       setMessages(fetchedMessages)
     })
 
-    return () => unsubscribe
+    return () => unsubscribe as unknown as void
   }, [])
 
   return { messages }

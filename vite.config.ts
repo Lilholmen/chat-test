@@ -4,5 +4,6 @@ import tsConfigPaths from 'vite-tsconfig-paths'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/chat-test/',
   plugins: [react(), tsConfigPaths()],
 })
